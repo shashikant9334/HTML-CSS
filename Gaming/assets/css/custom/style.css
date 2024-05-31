@@ -1,0 +1,547 @@
+* {
+    margin: 0px;
+    color: #ffffff;
+    font-family: 'basement-grotesque-regular';
+}
+
+body {
+    background: #040609;
+}
+ul
+{
+    padding: 0px;
+}
+
+
+
+@font-face {
+    font-family: 'daughter-of-fortune';
+    src: url(../../fonts/daughter-of-fortune.ttf);
+}
+
+@font-face {
+    font-family: 'basement-grotesque-regular';
+    src: url(../../fonts/basement-grotesque-regular.ttf);
+}
+
+@font-face {
+    font-family: 'basement-grotesque-bold';
+    src: url(../../fonts/basement-grotesque-bold.ttf);
+}
+
+@font-face {
+    font-family: 'basement-grotesque-black.ttf';
+    src: url(../../fonts/basement-grotesque-black.ttf);
+}
+
+.container {
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container-fluid
+{
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row, .d-flex
+{
+    display: flex;
+}
+.justify-content-center
+{
+    justify-content: center;
+}
+.justify-content-end
+{
+    justify-content: flex-end;
+}
+.justify-content-between
+{
+    justify-content: space-between;
+}
+.justify-content-around
+{
+    justify-content: space-around;
+}
+.justify-content-evenly
+{
+    justify-content: space-evenly;
+}
+.align-items-center
+{
+    align-items: center;
+}
+.m-0
+{
+    margin: 0px !important;
+}
+.p-0
+{
+    padding: 0px !important;
+}
+.col-20
+{
+    width: 20%;
+}
+.col-25
+{
+    width: 25%;
+}
+.col-30
+{
+    width: 30%;
+}
+.col-40
+{
+    width: 40%;
+}
+.overflow-hidden
+{
+    overflow: hidden;
+}
+
+.card-top
+{
+    width: 100%;
+    height: 334px;
+    background: linear-gradient(180deg, rgba(255 255 255 / 28%), rgba(255 255 255 / 0%));
+    border-radius: 23px;
+}
+
+
+
+
+nav {
+    &.primary-navigation
+    {
+      margin: 0 auto;
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 50px;  
+      padding: 0px 0 0 0;  
+      text-align: right;
+      font-size: 16px;
+    }
+
+    ul > li
+    {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 2px solid #3ca0e7;
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-family: arvo;
+    }
+
+    ul > li:first-child
+    {
+        border-left: none;
+    }
+  
+    li a
+    {
+        color: rgb(255, 255, 255);
+    }
+
+    .small-image
+    {
+        width: 30px;
+        height: auto;
+    }
+      
+    li a:hover
+    {
+        color: #3ca0e7;
+    }
+  
+    li:hover
+    {
+        cursor: pointer;
+    }
+  
+    ul li ul
+    {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+        background:transparent
+    }
+  
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 250px;
+        text-align: left;
+        padding-top: 20px;
+      }
+  
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+  
+      ul li ul li a:hover {
+        padding-left: 10px;
+        border-left: 2px solid #3ca0e7;
+        transition: all 0.3s ease;
+      }
+    }
+  
+  a {
+  
+      text-decoration: none;
+  
+      &:hover {
+          color: #3CA0E7;
+      }
+   
+  }
+  
+   ul li ul li a { transition: all 0.5s ease; }
+
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-text {
+    width: 50%;
+    text-align: center;
+    padding-right: 136px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.banner-text>p:nth-child(1) {
+    font-family: 'daughter-of-fortune';
+    font-size: 160px;
+}
+
+.banner-text>p:nth-child(2) {
+    font-family: 'basement-grotesque-bold';
+    font-size: 86px;
+    letter-spacing: -5px;
+    position: relative;
+    transform: translateY(-56px);
+}
+
+.banner-text>p:nth-child(3) {
+    width: 70%;
+    margin: 0px auto;
+    line-height: 1.5;
+    color: rgba(255 255 255 / 50%);
+}
+
+.main-btn {
+    width: 250px;
+    height: 75px;
+    clip-path: polygon(0 0, 92% 0, 100% 25%, 100% 100%, 8% 100%, 0 75%);
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    position: relative;
+    margin-top: 47px;
+}
+
+.main-btn>svg>text {
+    font-family: 'basement-grotesque-black.ttf';
+    letter-spacing: 10px;
+    font-weight: 19px;
+    text-transform: uppercase;
+}
+
+
+
+
+.gaming {
+    width: 100%;
+    padding: 200px 0px;
+    background: url(../../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.gaming-container>figure:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.gaming-container>figure:first-child {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: 3;
+    transform-origin: center center;
+    animation: spin 30s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.vr
+{
+    width: 100%;
+    position: relative;
+}
+.vr ul
+{
+    width: 50%;
+}
+.vr-list
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    margin: 0px auto;
+}
+.vr ul > li
+{
+    list-style: none;
+    margin-bottom: 19px;
+}
+.vr ul > li::before
+{
+    content: '\f058';
+    font-family: 'Fontawesome';
+    display: inline-block;
+    margin-right: 10px;
+}
+.vr > .container:first-child:after
+{
+    content: '-// ©2023 Blueskull gaming pvt. ltd //-';
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 0;
+    right: 0;
+    height: 390px;
+}
+
+
+
+
+.game_on
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+.products
+{
+    width: 100%;
+}
+.top_products_heading
+{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.heading
+{
+    font-family: 'basement-grotesque-black.ttf';
+    text-transform: capitalize;
+    font-size: 41px;
+    position: relative;
+}
+.heading::after
+{
+    content: "";
+    position: relative;
+    width: 0px;
+    height: 2px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0px auto;
+    background-color: #fff;
+    transition: width 0.5s ease;
+    transform-origin: 0 0;
+}
+.heading.show::after
+{
+    width: 100px;
+}
+.description
+{
+    width: 70%;
+    text-align: center;
+    margin: 50px auto 0px auto;
+    color: rgba(255 255 255 / 50%);
+}
+.products .card
+{
+    text-align: center;
+}
+.products .card > .card-top
+{
+    overflow: hidden;
+}
+.products .card:first-child .card-top img
+{
+    filter: drop-shadow(0px 0px 50px rgba(255 255 0 / 30%));
+}
+.products .card:hover:first-child .card-top img
+{
+    filter: drop-shadow(0px 20px 40px rgba(255 255 0 / 40%));
+}
+.products .card:nth-child(2) .card-top img
+{
+    filter: drop-shadow(0px 0px 50px rgba(130 68 137 / 81%));
+}
+.products .card:hover:nth-child(2) .card-top img
+{
+    filter: drop-shadow(0px 20px 50px rgba(130 68 137 / 95%));
+}
+.products .card:nth-child(3) .card-top img
+{
+    filter: drop-shadow(0px 0px 50px rgba(41 94 190 / 70%));
+}
+.products .card:hover:nth-child(3) .card-top img
+{
+    filter: drop-shadow(0px 20px 50px rgba(41 94 190 / 90%));
+}
+.products .card:nth-child(2) .card-top > figure,
+.products .card:nth-child(3) .card-top > figure
+{
+    position: relative;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+}
+.products .card-text
+{
+    padding: 0px 20px;
+}
+.products .card-text > p:first-child
+{
+    font-family: 'basement-grotesque-bold';
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.products .card-text > p:nth-child(2)
+{
+    font-family: 'basement-grotesque-regular';
+    font-size: 12px;
+}
+.products .card-text > p:nth-child(3)
+{
+    font-family: 'basement-grotesque-bold';
+    src: url(../../fonts/basement-grotesque-bold.ttf);
+    color: rgb(255 255 255 / 20%);
+    font-size: 17px;
+    text-decoration: line-through;
+}
+.products .card-text > p:nth-child(4)
+{
+    font-family: 'basement-grotesque-black.ttf';
+    font-size: 26px;
+}
+.tilt {
+	box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05);
+	transform-style: preserve-3d;
+}
+.tilt-inner
+{
+    transition: all 100ms ease-in-out;
+}
+.products .card:hover .tilt-inner
+{
+	transform: translateZ(40px) ;
+	position: relative;
+}
+.products .card:hover:nth-child(2) .card-top > figure,
+.products .card:hover:nth-child(3) .card-top > figure
+{
+    transform: translateZ(40px) translateY(-50%) !important;
+}
+
+
+footer
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.logo-name
+{
+    font-family:'basement-grotesque-black.ttf';
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 250px;
+}
+.logo-name11
+{
+    color: rgba(255 255 255 / 50%);
+}
+.logo-name1
+{
+    font-family:'basement-grotesque-black.ttf';
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 250px;
+}
+.foterlist > li
+{
+    list-style: none;
+    margin-bottom: 18px;
+    color: rgba(255 255 255 / 50%);
+}
+.copyright
+{
+    text-align: center;
+    margin-top: 200px;
+}
